@@ -3,6 +3,10 @@
 # *********************************************
 # By: jramirez@ortussolutions.com             *
 #**********************************************
+
+# https://docs.docker.com/engine/reference/commandline/compose/
+# https://hub.docker.com/r/ortussolutions/commandbox
+
 version: "3.7"
 services:
   API:
