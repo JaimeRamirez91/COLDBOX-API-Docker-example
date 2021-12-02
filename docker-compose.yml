@@ -1,0 +1,19 @@
+# *********************************************
+# Execute development environment             *
+# *********************************************
+# By: jramirez@ortussolutions.com             *
+#**********************************************
+version: "3.7"
+services:
+  API:
+    container_name: api
+    image: ortussolutions/commandbox:lucee5-alpine
+    environment:
+      PORT: 62090
+      ENVIRONMENT: development
+    ports:
+      - "8081:62090"
+    expose:
+      - "8081"
+    volumes:
+      - .:/app
